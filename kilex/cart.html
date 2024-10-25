@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="x-icon" href="Images/logoTransparent.png">
+    <link rel="stylesheet" href="cartStyle.css">
+
+    <!-- Email za sekija -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('kRRtTf29esCk6CZo1') </script>
+
+    <!-- Email za korisnika -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('kRRtTf29esCk6CZo1') </script>
+
+    <title>Naplata - Kilex</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="icoMenu"> <img src="Images/menu.png" class="icoMenuImage" width="40px" height="40px"> </div>
+        <div class="logoNavBar"> <img src="Images/logoTransparent.png" class="logoNavBarImage" width="70px" height="55px"> </div>
+        <div class="icoCart"> <img src="Images/backArrow.png" class="icoCartImage" width="30px" height="30px"> </div>
+    </div>
+
+    <div class="container">
+
+        <div class="form">
+            <h1>Vaši podaci: </h1>
+
+            <div class="nameLastName">
+                <div class="firstName">
+                    <h3>Ime: * </h3>
+                    <input type="text" placeholder="Ime" id="firstName">
+                    <div class="firstNameError error"></div>
+                </div>
+
+                <div class="lastName">
+                    <h3>Prezime: * </h3>
+                    <input type="text" placeholder="Prezime" id="lastName">
+                    <div class="lastNameError error"></div>
+                </div>
+            </div>
+
+            <div class="email">
+                <h3>Email: * </h3>
+                <input type="email" placeholder="E-adresa" id="email">
+                <div class="emailError error"></div>
+            </div>
+            
+            <div class="city">
+                <h3>Grad: </h3>
+                <input type="text" id="city">
+            </div>
+
+            <div class="adress">
+                <h3>Ulica i kućni broj: </h3>
+                <input type="text" id="adress">
+            </div>
+            
+            <div class="posta">
+                <h3>Poštanski broj: </h3>
+                <input type="text" id="posta">
+            </div>
+
+            <div class="phone">
+                <h3>Telefon: *</h3>
+                <input type="tel" pattern="^06[0-9]{7,9}$" placeholder="Broj telefona" id="phone">
+                <div class="phoneError error"></div>
+            </div>
+
+            <div class="paymentMethod">
+                <h3> Odaberite način plaćanja: *</h3>
+
+                <div class="kes">
+                    <label>
+                        <input type="radio" name="paymentMethod" value="Kes">
+                        POUZECEM
+                        <div class="kesText"> Podaci koje ste nam dostavili bice korisceni prilikom procesuiranja porudzbine. </div>
+                    </label>
+                </div>
+
+                <div class="kartica">
+                    <label>
+                        <input type="radio" name="paymentMethod" value="Kartica">
+                        KARTICA
+                        <div class="karticaText"> Izvrsite placanje direktno na nas racun u banci. Vasa narudzbina ce biti poslata nakon 
+                            sto uplata bude evidentirana </div>
+                    </label>
+                </div>
+
+                <div class="paymentError error"></div>
+            </div>
+
+        </div>
+
+        <div class="products">
+            <table class="productList">
+                <tr>
+                    <td> <h1>Porudžbina: </h1> </td>
+                </tr>
+
+                <tr>
+                    <td class="header">Proizvod</td>
+                    <td class="header">Cena</td>
+                </tr>
+            </table>
+
+            <div class="paying"> <h3>Plaćanje pouzećem!</h3> </div>
+                
+            <button class="order" onclick="Validate()"> Naručite </button>
+        </div>
+
+    </div>
+
+
+    <script src="cart.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.navbar{
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262424;
+    transition: .4s;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+}
+
+.form{
+    padding: 30px;
+    width: 100%;
+    height: max-content;
+}
+
+.products{
+    padding: 20px;
+    width: 100%;
+    height: max-content;
+}
+
+.nameLastName{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.firstName, .lastName{
+    padding-top: 10px;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.nameLastName input{
+    font-size: large;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border-color: gold;
+    transition: .2s;
+    padding: 5px;
+}
+
+.email, .city, .adress, .posta, .phone{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.email input, .city input, .adress input, .posta input, .phone input{
+    font-size: large;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border-color: gold;
+    transition: .2s;
+    padding: 5px;
+}
+
+.paymentMethod{
+    width: 100%;
+    background-color: #c3bcbc;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.paymentMethod h3{
+    margin-bottom: 20px;
+}
+
+.kes, .kartica{
+    margin-bottom: 20px;
+}
+
+.kesText, .karticaText{
+    background-color: #9a9494;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.productList{
+    width: 100%;
+    background-color: #c3bcbc;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.productList td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.productList .header{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.paying{
+    padding: 5px;
+    background-color: #c3bcbc;
+    font-size: large;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.order{
+    width: 100%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}

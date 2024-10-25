@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Trepavice 1",
+        "price": 450,
+        "image": "Images/trepaviceCrne.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Trepavice 2",
+        "price": 550,
+        "image": "Images/trepaviceCrne.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Trepavice 3",
+        "price": 490,
+        "image": "Images/trepaviceCrne.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Trepavice 4",
+        "price": 500,
+        "image": "Images/trepaviceCrne.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Trepavice 5",
+        "price": 670,
+        "image": "Images/trepaviceCrne.jpg"
+    }
+]
